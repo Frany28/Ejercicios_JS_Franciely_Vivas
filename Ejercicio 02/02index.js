@@ -21,6 +21,6 @@ if (jug01 == jug02) {
   } else if ((jug01 == "piedra" && jug02 == "tijera") || (jug01 == "papel" && jug02 == "piedra") || (jug01 == "tijera" && jug02 == "papel")) 
     {
       alert("Jugador 01 gana con " + jug01 + " contra " + jug02);
-      } else {
+      } else{
         alert("Jugador 02 gana con " + jug02 + " contra " + jug01);
       }
