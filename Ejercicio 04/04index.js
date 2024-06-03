@@ -7,28 +7,28 @@ var operacionesValidas = ["suma", "resta", "multiplicacion", "division"];
 var resultado;
 
 // Solicitar el primer número y validarlo
-do {
+do{
     var numero1 = parseFloat(prompt("Ingresa el primer número:"));
     if (isNaN(numero1)) {
         alert("Por favor, ingresa un número válido.");
     }
-} while (isNaN(numero1));
+}while (isNaN(numero1));
 
 // Solicitar el segundo número y validarlo
-do {
+do{
     var numero2 = parseFloat(prompt("Ingresa el segundo número:"));
     if (isNaN(numero2)) {
         alert("Por favor, ingresa un número válido.");
     }
-} while (isNaN(numero2));
+}while (isNaN(numero2));
 
 // Solicitar la operación y validarla
-do {
+do{
     var operacion = prompt("Ingresa la operación que deseas realizar (suma, resta, multiplicacion, division)").toLowerCase();
     if (!operacionesValidas.includes(operacion)) {
         alert("Operación no válida. Intenta de nuevo.");
     }
-} while (!operacionesValidas.includes(operacion));
+}while (!operacionesValidas.includes(operacion));
 
 // Realizar la operación y mostrar el resultado
 switch (operacion) {
