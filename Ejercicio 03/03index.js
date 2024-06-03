@@ -13,12 +13,12 @@ do {
 } while (!opciones.includes(color));
 
  // Determinar el resultado del juego
-  if (color==opciones[0]) {
-    alert("Continua");
-    }else if(color==opciones[1])
+if (color==opciones[0]) {
+  alert("Continua");
+  }else if(color==opciones[1])
+    {
+      alert("Despacio");
+    }else if(color==opciones[2])
       {
-        alert("Despacio");
-      }else if(color==opciones[2])
-        {
-          alert("Detente");
-        }
+        alert("Detente");
+      }

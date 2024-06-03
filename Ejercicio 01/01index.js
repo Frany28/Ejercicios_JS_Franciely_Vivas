@@ -5,7 +5,7 @@
     op = parseInt(op); // Convertir el valor ingresado a un número entero
     //isNaN usada para verificar si el valor ingresado es un numero y enviara true o false "is not a number"
     if (isNaN(op)){
-        alert("Por favor, ingresa un número válido.");
+      alert("Por favor, ingresa un número válido.");
     }
   } while (isNaN(op));
 //Detetminar si el numero es par o impar
