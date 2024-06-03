@@ -7,18 +7,18 @@ var opciones = ["verde", "amarillo", "rojo"];
 do {
   var color = prompt("Ingresa el color (verde,amarillo,rojo):").toLowerCase();
   if(!opciones.includes(color))
-    {
-      alert("ERROR. La opcion no es valida, escribió: " + color);
-    } 
+  {
+    alert("ERROR. La opcion no es valida, escribió: " + color);
+  } 
 } while (!opciones.includes(color));
 
- // Determinar el resultado del juego
+// Determinar el resultado del juego
 if (color==opciones[0]) {
   alert("Continua");
   }else if(color==opciones[1])
+  {
+    alert("Despacio");
+  }else if(color==opciones[2])
     {
-      alert("Despacio");
-    }else if(color==opciones[2])
-      {
-        alert("Detente");
-      }
+      alert("Detente");
+    }
