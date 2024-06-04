@@ -3,17 +3,17 @@
 var opciones = ["piedra", "papel", "tijera"];
 //ciclo do-while para validar los valores
 do {
-  var jug01 = prompt("Jugador 01, elige tu opcion (piedra,papel,tijera):").toLowerCase();
-  var jug02 = prompt("Jugador 02, elige tu opcion (piedra,papel,tijera:):").toLowerCase();
+  jug01 = prompt("Jugador 01, elige tu opción (piedra, papel, tijera):").toLowerCase();
+  jug02 = prompt("Jugador 02, elige tu opción (piedra, papel, tijera):").toLowerCase();
 
-if(!opciones.includes(jug01))
-  {
-    alert("La opcion del jugador 01 no es valida, escribio: " + jug01);
-  }else if(!opciones.includes(jug02))
-    {
-      alert("La opcion del jugador 02 no es valida, escribio: "+ jug02);
-    } 
-} while (!opciones.includes(jug01) && !opciones.includes(jug02));
+  if (!opciones.includes(jug01)) {
+    alert("La opción del jugador 01 no es válida, escribió: " + jug01);
+  }
+  
+  if (!opciones.includes(jug02)) {
+    alert("La opción del jugador 02 no es válida, escribió: " + jug02);
+  }
+} while (!opciones.includes(jug01) || !opciones.includes(jug02));
 
 // Determinar el resultado del juego
 if (jug01 == jug02) {
