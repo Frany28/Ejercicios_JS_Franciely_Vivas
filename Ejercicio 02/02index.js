@@ -7,20 +7,13 @@ do {
   var jug02 = prompt("Jugador 02, elige tu opcion (piedra,papel,tijera:):").toLowerCase();
 
 if(!opciones.includes(jug01))
-
   {
     alert("La opcion del jugador 01 no es valida, escribio: " + jug01);
-  }
-  
-} while (!opciones.includes(jug01));
-do{
-
-  if(!opciones.includes(jug02))
+  }else if(!opciones.includes(jug02))
     {
       alert("La opcion del jugador 02 no es valida, escribio: "+ jug02);
     } 
-
-}while(!opciones.includes(jug02))
+} while (!opciones.includes(jug01) && !opciones.includes(jug02));
 
 // Determinar el resultado del juego
 if (jug01 == jug02) {
