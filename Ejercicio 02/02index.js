@@ -13,7 +13,7 @@ if(!opciones.includes(jug01))
     {
       alert("La opcion del jugador 02 no es valida, escribio: "+ jug02);
     } 
-} while (!opciones.includes(jug01) || !opciones.includes(jug02));
+} while (!opciones.includes(jug01) && !opciones.includes(jug02));
 
 // Determinar el resultado del juego
 if (jug01 == jug02) {
