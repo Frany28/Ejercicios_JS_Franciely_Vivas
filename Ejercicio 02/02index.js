@@ -13,6 +13,7 @@ do {
   if (!opciones.includes(jug02)) {
     alert("La opción del jugador 02 no es válida, escribió: " + jug02);
   }
+  
 } while (!opciones.includes(jug01) || !opciones.includes(jug02));
 
 // Determinar el resultado del juego
