@@ -9,6 +9,5 @@ function calculo(resultado = 0) {
   return resultado;
 }
 
-// Llamada a la función y almacenamiento del resultado
 resultado = calculo();
 alert("El resultado es " + resultado);
